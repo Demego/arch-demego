@@ -106,4 +106,5 @@ zsh
 zsh-syntax-highlighting
 zsh-autosuggestions
 iwd
+dhcpcd
 nano

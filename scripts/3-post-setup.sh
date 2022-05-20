@@ -98,16 +98,18 @@ echo "  Cups enabled"
 ntpd -qg
 systemctl enable ntpd.service
 echo "  NTP enabled"
-systemctl disable dhcpcd.service
-echo "  DHCP disabled"
-systemctl stop dhcpcd.service
-echo "  DHCP stopped"
+#systemctl disable dhcpcd.service
+#echo "  DHCP disabled"
+#systemctl stop dhcpcd.service
+#echo "  DHCP stopped"
 systemctl enable NetworkManager.service
 echo "  NetworkManager enabled"
 systemctl enable bluetooth
 echo "  Bluetooth enabled"
 systemctl enable avahi-daemon.service
 echo "  Avahi enabled"
+systemctl --now enable dhcpcd
+echo "  dhcpcd enabled"
 systemctl --now enable iwd
 echo "  IWD enabled"
 
