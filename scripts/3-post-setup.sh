@@ -98,19 +98,15 @@ echo "  Cups enabled"
 ntpd -qg
 systemctl enable ntpd.service
 echo "  NTP enabled"
-#systemctl disable dhcpcd.service
-#echo "  DHCP disabled"
-#systemctl stop dhcpcd.service
-#echo "  DHCP stopped"
 systemctl enable NetworkManager.service
 echo "  NetworkManager enabled"
 systemctl enable bluetooth
 echo "  Bluetooth enabled"
 systemctl enable avahi-daemon.service
 echo "  Avahi enabled"
-systemctl --now enable dhcpcd
+systemctl enable --now dhcpcd
 echo "  dhcpcd enabled"
-systemctl --now enable iwd
+systemctl enable --now iwd
 echo "  IWD enabled"
 
 if [[ "${FS}" == "luks" || "${FS}" == "btrfs" ]]; then
