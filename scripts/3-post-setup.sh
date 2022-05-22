@@ -108,6 +108,8 @@ systemctl enable --now dhcpcd
 echo "  dhcpcd enabled"
 systemctl enable --now iwd
 echo "  IWD enabled"
+systemctl enable --now sshd
+echo "  SSHD enabled"
 
 if [[ "${FS}" == "luks" || "${FS}" == "btrfs" ]]; then
 echo -ne "
