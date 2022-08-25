@@ -1,0 +1,4 @@
+sudo snap install postman
+sudo snap install acrordrdc
+sudo snap install teams
+sudo snap install sayonara
