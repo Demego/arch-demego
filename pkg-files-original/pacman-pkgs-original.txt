@@ -42,7 +42,9 @@ flex
 fuse2
 fuse3
 fuseiso
+gamemode
 gcc
+gimp
 gparted
 gptfdisk
 grub-customizer
@@ -52,6 +54,7 @@ gst-plugins-ugly
 haveged
 htop
 jdk-openjdk
+kitty
 libdvdcss
 libtool
 lsof
@@ -78,8 +81,10 @@ python-notify2
 python-psutil
 python-pyqt5
 python-pip
+qemu
 snap-pac
 snapper
+steam
 swtpm
 synergy
 terminus-font
@@ -90,6 +95,8 @@ ttf-roboto
 ufw
 unrar
 unzip
+virt-manager
+virt-viewer
 which
 wine-gecko
 wine-mono
