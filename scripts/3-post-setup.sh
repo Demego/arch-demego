@@ -53,7 +53,9 @@ echo -ne "
 #echo -e "Updating grub..."
 #grub-mkconfig -o /boot/grub/grub.cfg
 #echo -e "All set!"
-#
+
+echo -e "Updating grub..."
+grub-mkconfig -o /boot/grub/grub.cfg
 
 echo -ne "
 -------------------------------------------------------------------------
